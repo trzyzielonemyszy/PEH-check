@@ -6,6 +6,8 @@ if __name__ == '__main__':
     db = Db()
     db.check_ingredients()
 
+    db.report()
+
 
 
 

@@ -34,9 +34,14 @@ class Db:
             for i in v.get_ingredients_raw():
                 i_fix=i.lstrip()
                 if i_fix in self.ingredients:
-                    v.add_ingredient()
+                    v.add_ingredient(self.ingredients[i_fix])
                 else:
                     print(f'Unrecognized ingredient: {i_fix}')
+
+    def report(self):
+        print('REPORTING PRODUCTS:')
+        for p in self.products.values():
+            print(p.describe())
 
 
 
