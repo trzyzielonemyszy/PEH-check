@@ -1,6 +1,6 @@
 class User:
-    def __init__(self, name='Anonymous'):
-        self.name = name
+    def __init__(self, entry):
+        self.name = entry[0]
         self.products = {}
         print(f'Created user: {self.name}')
 

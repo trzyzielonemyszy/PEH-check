@@ -1,13 +1,11 @@
-from PEH.user import User
-
-
-
+from PEH.db import Db
 
 
 if __name__ == '__main__':
-
     print("Hello")
-    print('Podaj nazwe uzytkownika:')
-    usr=User(input())
+    db = Db()
+    db.check_ingredients()
+
+
 
 
